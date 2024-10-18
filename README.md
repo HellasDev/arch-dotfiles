@@ -37,11 +37,6 @@
     git clone https://github.com/HellasDev/dotfiles-arch ~/.config/hyprland
     ```
 
-2. Αντιγραφή των dotfiles στον κατάλληλο φάκελο ρυθμίσεων:
-    ```bash
-    cp -r ~/.config/hyprland/* ~/.config/
-    ```
-
 3. Επανεκκίνησε το Hyprland ή το σύστημά σου για να φορτωθούν οι νέες ρυθμίσεις.
 
 ## Παραμετροποίηση
