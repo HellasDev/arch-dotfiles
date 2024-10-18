@@ -1,0 +1,81 @@
+
+* {
+    background: rgba(40, 44, 52, 0.5); /* One Dark Background με 50% διαφάνεια */
+    color: rgba(171, 178, 191, 0.8); /* One Dark Foreground με 80% διαφάνεια */
+    border-color: rgba(97, 175, 239, 0.7); /* One Dark Blue Border με 70% διαφάνεια */
+    bg-selected: rgba(62, 68, 81, 0.5); /* Έτσι και για το selected background */
+    grey: rgba(92, 99, 112, 0.5); /* One Dark Grey με 50% διαφάνεια */
+    font-weight: bold;
+    font: "FiraCode Nerd Font 14";
+}
+
+
+
+#window {
+    background-color: rgba(40, 44, 52, 1); /* One Dark Background με 50% διαφάνεια */
+    padding: 10px;
+    border: 1px; /* One Dark Blue Border με 70% διαφάνεια */
+    border-radius: 12px;
+    width: 23em;
+    margin: 8px; /* Κεντράρισμα */
+}
+
+
+#mainbox {
+    background-color: #282c34; /* One Dark Background */
+    spacing: 10px;
+    margin: 10px 0 0 0;
+    width: 200px; /* Ορίστε το πλάτος */
+}
+
+#inputbar {
+    children: [prompt, entry];
+    background-color: #282c34; /* One Dark Background */
+}
+
+#listview {
+    background-color: #282c34; /* One Dark Background */
+    fixed-height: true;
+    margin: 5px 0 0 10px;
+}
+
+#element {
+    padding: 5px;
+    background-color: #282c34; /* One Dark Background */
+    text-color: #abb2bf; /* One Dark Foreground */
+    font-weight: bold; /* Make text bold */
+}
+
+element selected {
+    background-color: #61afef; /* One Dark Selected Background */
+    text-color: #282c34; /* One Dark Foreground */
+    font-weight: bold; /* Make text bold */
+    border-radius: 12px;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+    font-weight: bold; /* Make text bold */
+}
+
+element-icon {
+    background-color: inherit;
+    margin: 0 4px 0 0;
+    size: 45px;
+}
+
+#entry {
+    background-color: #282c34; /* One Dark Background */
+    text-color: #abb2bf; /* One Dark Foreground */
+    placeholder: "Αναζήτηση...";
+    placeholder-color: #5c6370; /* One Dark Grey */
+}
+
+#prompt {
+    background-color: #282c34; /* One Dark Background */
+    padding: 0 4px;
+    margin: 0 5px 0 0;
+    text-color: #abb2bf; /* One Dark Foreground */
+}
+

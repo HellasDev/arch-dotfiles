@@ -1,0 +1,89 @@
+* {
+    background: #282c34; /* One Dark Background */
+    foreground: #abb2bf; /* One Dark Foreground */
+    border-color: #282c34; /* One Dark Border Color */
+    bg-selected: #3e4451; /* One Dark Selected Background */
+    grey: #5c6370; /* One Dark Grey */
+    spacing: 2;
+    width: 30em; /* Ορίζουμε πλάτος */
+    margin: 0; /* Κεντράρισμα */
+    padding: 0;
+    font-weight: bold;
+    font: "FiraCode Nerd Font 16";
+}
+
+body {
+    justify-content: center; /* Κεντράρισμα οριζόντια */
+    align-items: center; /* Κεντράρισμα κατακόρυφα */
+    margin: 0; /* Αφαίρεση περιθωρίων του body */
+}
+
+#window {
+    background-color: #282c34; /* One Dark Background */
+    border: 1px solid #61afef; /* One Dark Blue Border */
+    padding: 0;
+    width: 30em; /* Ορίστε το πλάτος */
+    margin: 20px; /* Περιθώριο γύρω από το στοιχείο */
+}
+
+#mainbox {
+    background-color: #282c34; /* One Dark Background */
+    spacing: 10px;
+    margin: 10px 0 0 0;
+    width: 200px; /* Ορίστε το πλάτος */
+}
+
+#inputbar {
+    children: [prompt, entry];
+    background-color: #282c34; /* One Dark Background */
+}
+
+#listview {
+    background-color: #282c34; /* One Dark Background */
+    fixed-height: true;
+    margin: 5px 0 0 10px;
+}
+
+#element {
+    padding: 5px;
+    background-color: #282c34; /* One Dark Background */
+    text-color: #abb2bf; /* One Dark Foreground */
+    font-weight: bold; /* Make text bold */
+}
+
+element selected {
+    background-color: #3e4451; /* One Dark Selected Background */
+    text-color: #abb2bf; /* One Dark Foreground */
+    font-weight: bold; /* Make text bold */
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+    font-weight: bold; /* Make text bold */
+}
+
+element-icon {
+    background-color: inherit;
+    margin: 0 4px 0 0;
+    size: 45px;
+}
+
+#entry {
+    background-color: #282c34; /* One Dark Background */
+    text-color: #abb2bf; /* One Dark Foreground */
+    placeholder: "Search";
+    placeholder-color: #5c6370; /* One Dark Grey */
+    font: "FiraCode Nerd Font 20";
+    font-weight: bold; /* Make text bold */
+}
+
+#prompt {
+    background-color: #282c34; /* One Dark Background */
+    padding: 0 4px;
+    margin: 0 5px 0 0;
+    text-color: #abb2bf; /* One Dark Foreground */
+    font: "FiraCode Nerd Font 20";
+    font-weight: bold; /* Make text bold */
+}
+

@@ -1,0 +1,198 @@
+* {
+  font-family: "FiraCode Nerd Font";
+  font-weight: bold;
+  font-size: 14px;
+  min-height: 0;
+}
+
+#waybar {
+  background-color: #282c34; /* Βασικό background του One Dark Pro */
+  border: 12px;
+  border: 12px;
+  padding: 5px;
+}
+
+#waybar.hidden {
+  opacity: 0;
+}
+
+#workspaces button {
+  background: transparent;
+  color: #04a5e5; /* Απαλό γκρι για τα κουμπιά */
+  background-color: #5c6370; /* Ελαφριά επισήμανση στο hover */
+  border: 1px solid #b4befe;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#workspaces button.empty {
+  color: #abb2bf;
+}
+
+#workspaces button.persistent {
+  padding: 0px 15px;
+  margin: 5px;
+  border-radius: 18px;
+}
+
+#workspaces button:hover {
+  background: rgba(52, 52, 52, 0.5); /* Ελαφριά επισήμανση στο hover */
+}
+
+#workspaces button.active {
+  color: #04a5e5; /* Μπλε-γαλάζιο για ενεργά κουμπιά */
+}
+
+#workspaces button.focused {
+  color: #d20f39;
+  background: #64727d;
+  border-bottom: 3px solid #ffffff;
+}
+
+#workspaces button.urgent {
+  background-color: #e06c75; /* Κόκκινο για επείγουσες καταστάσεις */
+  color: #282c34;
+}
+
+#mode {
+  background-color: #c678dd; /* Μωβ για τον mode */
+  color: #282c34;
+  margin: 0 4px;
+}
+
+#temperature,
+#memory,
+#pulseaudio {
+  color: #c678dd; /* Πράσινο για τα modules */
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+#window {
+  color: #abb2bf;
+  padding: 0px 20px;
+}
+
+#workspaces {
+  margin: 0 0px;
+}
+
+.modules-left > widget:first-child > #workspaces {
+  margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+  margin-right: 0;
+}
+
+#network {
+  color: #d19a66; /* Πορτοκαλί για το δίκτυο και το ρολόι */
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+#clock {
+  color: #56b6c2; /* Πορτοκαλί για το δίκτυο και το ρολόι */
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 16px;
+}
+
+@keyframes blink {
+  to {
+    background-color: #f5f5f5;
+    color: #000000;
+  }
+}
+
+label:focus {
+  background-color: #000000;
+}
+
+#network.disconnected {
+  background-color: #e06c75; /* Κόκκινο όταν το δίκτυο είναι αποσυνδεδεμένο */
+  color: #282c34;
+  padding-right: 10px;
+  border-radius: 15px;
+}
+
+#pulseaudio {
+  color: #98c379;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 16px;
+}
+
+#pulseaudio.muted {
+  color: #5c6370; /* Απαλό γκρι όταν ο ήχος είναι σε σίγαση */
+  padding-right: 5px;
+  padding-left: 5px;
+  border: 1px solid #b4befe;
+  border-radius: 15px;
+}
+
+#tray {
+  color: #e06c75;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+#idle_inhibitor {
+  background-color: #282c34;
+}
+
+#idle_inhibitor.activated {
+  background-color: #56b6c2; /* Μπλε-πράσινο όταν είναι ενεργοποιημένο */
+  color: #282c34;
+}
+
+menu {
+  border-radius: 15px;
+  background: #21252b; /* Σκούρο background για τα μενού */
+  color: #04a5e5;
+}
+
+menuitem {
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+#custom-power {
+  color: #e06c75; /* Κόκκινο για τα κουμπιά ισχύος */
+  background-color: #5c6370;
+  border-radius: 8px;
+  border: none;
+  margin: 5px;
+  margin-left: 5px;
+  padding-left: 13px;
+  padding-right: 8px;
+  border: 1px solid #b4befe;
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.8); /* Σκιά */
+}
+
+#custom-power:hover {
+  background-color: #3e4451; /* Πιο σκούρο κατά το hover */
+}
+
+#custom-menu {
+  color: #04a5e5; /* Κόκκινο για τα κουμπιά ισχύος */
+  background-color: #5c6370;
+  border-radius: 8px;
+  border: none;
+  margin: 5px;
+  padding-left: 12px;
+  padding-right: 8px;
+  border: 1px solid #b4befe;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.8); /* Σκιά */
+}
+
+#custom-menu:hover {
+  background-color: #3e4451; /* Πιο σκούρο κατά το hover */
+}
